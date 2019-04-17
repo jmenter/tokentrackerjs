@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title>token tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./reset.css" rel="stylesheet" type="text/css">
+    <link href="./styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="stepper-group victory top left">
+            <div class="value" id="victory">0</div>
+            <div class="stepper-increment up label" onclick="incrementVictory()">Victory</div>
+            <div class="stepper-decrement down" onclick="decrementVictory()"></div>
+        </div>
+        <div class="stepper-group villager top right">
+            <div class="value" id="villagers">0</div>
+            <div class="stepper-increment up label" onclick="incrementVillagers()">Villagers</div>
+            <div class="stepper-decrement down" onclick="decrementVillagers()"></div>
+        </div>
+        <div class="stepper-group coffer bottom left">
+            <div class="value" id="coffers">0</div>
+            <div class="stepper-increment up label" onclick="incrementCoffers()">Coffers</div>
+            <div class="stepper-decrement down" onclick="decrementCoffers()"></div>
+        </div>
+        <div class="stepper-group debt bottom right">
+            <div class="value" id="debt">0</div>
+            <div class="stepper-increment up label" onclick="incrementDebt()">Debt</div>
+            <div class="stepper-decrement down" onclick="decrementDebt()"></div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

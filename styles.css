@@ -1,0 +1,87 @@
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    text-align: center
+}
+
+.stepper-group {
+    width: calc(50vw - 8px - 4px);
+    height: calc(50vh - 8px - 4px);
+    margin: 8px;
+    border-radius: 8px;
+}
+
+.down {
+    background: url(down.svg);
+    background-size: cover;
+}
+
+.up {
+    background: url(up.svg);
+    background-size: cover;
+}
+
+.top {
+    margin-bottom: 4px;
+}
+
+.left {
+    margin-right: 4px;
+}
+
+.bottom {
+    margin-top: 4px;
+}
+
+.right {
+    margin-left: 4px;
+}
+
+.victory {
+    background-color: #00AC00;
+}
+
+.villager {
+    background-color: #4B92A9;
+}
+
+.coffer {
+    background-color: #83543C;
+}
+
+.debt {
+    background-color: #A73123;
+}
+
+.value {
+    position: absolute;
+    font-size: 72px;
+    font-weight: 700;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+    width: calc(50vw - 12px);
+    transform: translateY(calc(25vw + 24px));
+}
+
+.label {
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.stepper-increment {
+    width: calc(50vw - 12px);
+    height: calc(25vh - 6px);
+}
+
+.stepper-decrement {
+    text-align: left;
+    width: calc(50vw - 12px);
+    height: calc(25vh - 6px);
+}
