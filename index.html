@@ -11,23 +11,28 @@
     <div class="flex-container">
         <div class="stepper-group victory top left">
             <div class="value" id="victory">0</div>
-            <div class="stepper-increment up label" onclick="incrementVictory()">Victory</div>
-            <div class="stepper-decrement down" onclick="decrementVictory()"></div>
+            <div class="label">Victory</div>
+            <div class="stepper-increment up label" onclick="handleOnClick('victory', 1)"
+                onmousedown="handleMouseDown(this)" onmouseup="handleMouseUp(this)"></div>
+            <div class="stepper-decrement down" onclick="handleOnClick('victory', -1)"></div>
         </div>
         <div class="stepper-group villager top right">
             <div class="value" id="villagers">0</div>
-            <div class="stepper-increment up label" onclick="incrementVillagers()">Villagers</div>
-            <div class="stepper-decrement down" onclick="decrementVillagers()"></div>
+            <div class="label">Villagers</div>
+            <div class="stepper-increment up label" onclick="handleOnClick('villagers', 1)"></div>
+            <div class="stepper-decrement down" onclick="handleOnClick('villagers', -1)"></div>
         </div>
         <div class="stepper-group coffer bottom left">
             <div class="value" id="coffers">0</div>
-            <div class="stepper-increment up label" onclick="incrementCoffers()">Coffers</div>
-            <div class="stepper-decrement down" onclick="decrementCoffers()"></div>
+            <div class="label">Coffers</div>
+            <div class="stepper-increment up label" onclick="handleOnClick('coffers', 1)"></div>
+            <div class="stepper-decrement down" onclick="handleOnClick('coffers', -1)"></div>
         </div>
         <div class="stepper-group debt bottom right">
             <div class="value" id="debt">0</div>
-            <div class="stepper-increment up label" onclick="incrementDebt()">Debt</div>
-            <div class="stepper-decrement down" onclick="decrementDebt()"></div>
+            <div class="label">Debt</div>
+            <div class="stepper-increment up label" onclick="handleOnClick('debt', 1)"></div>
+            <div class="stepper-decrement down" onclick="handleOnClick('debt', -1)"></div>
         </div>
     </div>
     <script src="./script.js"></script>

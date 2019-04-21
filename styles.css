@@ -1,6 +1,7 @@
 .flex-container {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-evenly;
     width: 100vw;
     height: 100vh;
     background-color: black;
@@ -8,36 +9,36 @@
 }
 
 .stepper-group {
-    width: calc(50vw - 8px - 4px);
+    width: calc(50vw - 8px - 11px);
     height: calc(50vh - 8px - 4px);
-    margin: 8px;
+    /* margin: 8px; */
     border-radius: 8px;
 }
 
 .down {
-    background: url(down.svg);
-    background-size: cover;
+    background: url(down.svg) no-repeat center;
+    opacity: 0.5;
 }
 
 .up {
-    background: url(up.svg);
-    background-size: cover;
+    background: url(up.svg) no-repeat center;
+    opacity: 0.5;
 }
 
 .top {
-    margin-bottom: 4px;
+    margin-top: 8px;
 }
 
 .left {
-    margin-right: 4px;
+    /* margin-right: 4px; */
 }
 
 .bottom {
-    margin-top: 4px;
+    /* margin-top: 4px; */
 }
 
 .right {
-    margin-left: 4px;
+    /* margin-left: 4px; */
 }
 
 .victory {
@@ -58,17 +59,19 @@
 
 .value {
     position: absolute;
-    font-size: 72px;
+    font-size: 64px;
     font-weight: 700;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    text-shadow: 2px 2px 4px #000000;
+    text-shadow: 0px 0px 8px #0000007c;
     width: calc(50vw - 12px);
-    transform: translateY(calc(25vw + 24px));
+    height: 64px;
+    transform: translateY(calc(25vh - 32px - 8px));
 }
 
 .label {
+    height: 18px;
     font-size: 14px;
     font-weight: 700;
     color: white;
@@ -77,11 +80,11 @@
 
 .stepper-increment {
     width: calc(50vw - 12px);
-    height: calc(25vh - 6px);
+    height: calc(25vh - 6px - 18px);
 }
 
 .stepper-decrement {
     text-align: left;
     width: calc(50vw - 12px);
-    height: calc(25vh - 6px);
+    height: calc(25vh - 6px - 18px);
 }
